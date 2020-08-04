@@ -1,0 +1,24 @@
+
+<div *ngFor="let hero of heros">
+
+    <table>
+        <tr>
+            <td>
+                <img [src]="hero.Image" alt="No-Image"/>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Name : </td>
+                        <td>{{hero.Name}}</td>
+                    </tr>
+                    <tr>
+                        <td>DOB : </td>
+                        <td>{{hero.DOB}}</td>
+                    </tr>                                       
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,41 @@
+  <!-- DataBinding -->
+  <!--Interpolation -->
+  <P> Recommend to click the following link for Better Understanding :
+    <a href="{{docPath}}" target="_blank"> Documentation </a>
+  </P>
+  
+  <P style="font-weight: bold;">Data Bindings: </P>
+  <p> InterPolation and Background color set at css file</p>
+  <h3 Class="bgColor"> Welcome to Angular Training : {{ Name }} </h3>
+  <p> Your IP: {{ publicIP }}</p>
+  <p> Image SRC using Property Bindings </p>
+  <img src="{{imagePath}}" alt="No-Image" height="100px" width="100px"/>
+  <img [src]="imagePath" alt="No-Image" height="100px" width="100px"/>
+  <img bind-src="imagePath" width="100px" height="100px" alt="image not found">
+  <p> Event Binding on Button</p>
+  <button (click)="buttonClicked()">Click Me</button>
+  <p> Two Way Data Binding using Ng Model (Need Formodule as well)</p>
+  <input type="text" [(ngModel)]="ShowData" />
+  <p>HI {{ShowData}} !</p>
+
+<p> Below is *ngIf example:</p>
+  <div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Content to render when condition is true.</ng-template>
+<ng-template #elseBlock>Content to render when condition is false.</ng-template>
+
+   <p> Below are the Main Topics in Angular using *ngFor</p>
+
+   <ul>
+     <li style="list-style: none" *ngFor="let topic of topics; index as i"> <p>{{i+1}} - {{topic}} </p></li>
+   </ul>
+
+   <p> Below are Componets with Routing example </p>
+   
+   <app-header> </app-header>
+   <fieldset>
+     <legend> {{componentName}} </legend>
+   <router-outlet></router-outlet>
+  </fieldset>
+   <app-footer> </app-footer>
+
+   

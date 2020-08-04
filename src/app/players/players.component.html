@@ -1,0 +1,41 @@
+
+<div *ngFor="let player of players">
+
+    <table>
+        <tr>
+            <td>
+                <img [src]="player.Image" alt="No-Image"/>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Name : </td>
+                        <td><a href="#">{{player.Name}}</a></td>
+                    </tr>
+                    <tr>
+                        <td>DOB : </td>
+                        <td>{{player.DOB}}</td>
+                    </tr>
+                    <tr>
+                        <td>Major-Team : </td>
+                        <td>{{player.Majorteam}}</td>
+                    </tr>
+                    <tr>
+                        <td>Batting-Style : </td>
+                        <td>{{player.Battingstyle}}</td>
+                    </tr>
+                    <tr>
+                        <td>Bowling-Style : </td>
+                        <td>{{player.Bowlingstyle}}</td>
+                    </tr>
+                    <tr>
+                        <td>Playing Role : </td>
+                        <td>{{player.Playingrole}}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

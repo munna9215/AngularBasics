@@ -1,0 +1,25 @@
+.marq{
+    background-color:#76cdd8;
+    color:black;
+    height: 30px;
+    border:1px solid black;
+}
+
+a{
+    border:1px solid black;
+    background-color: #76cdd8;
+    color:black;
+    width:100px;
+    height:30px;
+    border:1px solid black;    
+}
+
+a:active {
+    background-color: black;
+    color:white;
+  }
+
+  a:hover {
+    background-color: white;
+    color:black;
+  }
